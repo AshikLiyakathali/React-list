@@ -1,6 +1,8 @@
 import React from "react";
 import SimpleList from "./List/SimpleList";
 import ComplexList from "./List/ComplexList";
+import NestedList from "./List/NestedList";
+import UpdateList from "./List/UpdateList";
 import "./App.css";
 
 function App() {
@@ -10,6 +12,10 @@ function App() {
       <SimpleList />
       <hr />
       <ComplexList />
+      <hr />
+      <NestedList />
+      <hr />
+      <UpdateList />
     </div>
   );
 }
