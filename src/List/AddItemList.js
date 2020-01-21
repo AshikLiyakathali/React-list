@@ -1,12 +1,15 @@
 import React from "react";
 
 const initialList = ["Learn React", "Learn Firebase", "Learn GraphQL"];
+
 const ListWithAddItem = () => {
   const [value, setValue] = React.useState("");
   const [list, setList] = React.useState(initialList);
+
   const handleChange = event => {
     setValue(event.target.value);
   };
+
   const handleSubmit = event => {
     if (value) {
       setList(list.concat(value));
@@ -14,6 +17,7 @@ const ListWithAddItem = () => {
     setValue("");
     event.preventDefault();
   };
+
   return (
     <div>
       <ul>
@@ -28,4 +32,5 @@ const ListWithAddItem = () => {
     </div>
   );
 };
+
 export default ListWithAddItem;

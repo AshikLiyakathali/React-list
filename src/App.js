@@ -1,21 +1,17 @@
 import React from "react";
-import SimpleList from "./List/SimpleList";
-import ComplexList from "./List/ComplexList";
-import NestedList from "./List/NestedList";
-import UpdateList from "./List/UpdateList";
+import AddItemList from "./List/AddItemList";
+import UpdateItemList from "./List/UpdateItemList";
+import RemoveItemList from "./List/RemoveItemList";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Sample List</h1>
-      <SimpleList />
-      <hr />
-      <ComplexList />
-      <hr />
-      <NestedList />
-      <hr />
-      <UpdateList />
+      <h1>Changing List</h1>
+      <AddItemList />
+      <UpdateItemList />
+      <RemoveItemList />
     </div>
   );
 }
